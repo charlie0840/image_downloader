@@ -60,7 +60,7 @@ class ImageDownloaderPlugin(
 
             val tempFileName = SimpleDateFormat("yyyy-MM-dd.HH.mm.sss", Locale.getDefault()).format(Date())
 
-            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, tempFileName)
+            request.setDestinationInExternalPublicDir(Environment.DIRECTORY_PICTURES, tempFileName)
 
             val downloader = Downloader(context, request)
 
